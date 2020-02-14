@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="app">
+    <form action="">
+      <label for="dog">いぬ</label>
+      <input type="radio" id="dog" value="いぬ" v-model="pet" />
+      <br />
+      <label for="cat">ねこ</label>
+      <input type="radio" id="cat" value="ねこ" v-model="pet" />
+      <br />
+      <label for="other">その他</label>
+      <input type="radio" id="other" value="その他" v-model="pet" />
+      <br />
+    </form>
+    <p>ペット：{{ pet }}</p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+  <script src="js/model_radio.js"></script>
+
+</body>
+
+</html>
